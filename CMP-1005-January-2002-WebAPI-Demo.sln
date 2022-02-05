@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP-1005-January-2002-WebAPI-Demo-App", "CMP-1005-January-2002-WebAPI-Demo-App\CMP-1005-January-2002-WebAPI-Demo-App.csproj", "{64C33F28-F2E6-4297-88D6-340CA3AF8938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP-1005-January-2002-WebAPI-Demo-API", "CMP-1005-January-2002-WebAPI-Demo-API\CMP-1005-January-2002-WebAPI-Demo-API.csproj", "{DE219B8E-FD75-4EE9-AA6B-CF3631E9B7E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64C33F28-F2E6-4297-88D6-340CA3AF8938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C33F28-F2E6-4297-88D6-340CA3AF8938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C33F28-F2E6-4297-88D6-340CA3AF8938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C33F28-F2E6-4297-88D6-340CA3AF8938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE219B8E-FD75-4EE9-AA6B-CF3631E9B7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE219B8E-FD75-4EE9-AA6B-CF3631E9B7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE219B8E-FD75-4EE9-AA6B-CF3631E9B7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE219B8E-FD75-4EE9-AA6B-CF3631E9B7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {629913F0-EFFA-4307-B00C-DD96052F3DD2}
+	EndGlobalSection
+EndGlobal
