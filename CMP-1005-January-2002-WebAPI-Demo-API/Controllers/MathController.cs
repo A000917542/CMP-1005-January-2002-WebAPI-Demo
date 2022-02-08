@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,20 @@ namespace CMP_1005_January_2002_WebAPI_Demo_API.Controllers
     public class MathController : ControllerBase
     {
         [HttpGet]
-        public double Add(int lValue, int rValue)
+        public double? Add(int lValue, int rValue)
         {
-            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
-            Response.Headers.Add("Access-Control-Allow-Origin", "https://ca.yahoo.com");
-            return lValue + rValue;
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            
+            if (lValue > 100 || rValue > 100)
+            {
+                Response.StatusCode = 400;
+                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Bad Request";
+                return null;
+            }
+            else
+            {
+                return lValue + rValue;
+            }
         }
 
         [HttpGet]
