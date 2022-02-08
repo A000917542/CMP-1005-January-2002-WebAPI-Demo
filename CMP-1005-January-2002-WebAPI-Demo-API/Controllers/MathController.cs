@@ -13,6 +13,20 @@ namespace CMP_1005_January_2002_WebAPI_Demo_API.Controllers
     public class MathController : ControllerBase
     {
         [HttpGet]
+        public void GoToPermanent(string url = "https://google.ca/")
+        {
+            Response.StatusCode = 308;
+            Response.Headers.Add("Location", url);
+        }
+
+        [HttpGet]
+        public void GoToTemporary(string url = "https://bing.ca/")
+        {
+            Response.StatusCode = 307;
+            Response.Headers.Add("Location", url);
+        }
+
+        [HttpGet]
         public double? Add(int lValue, int rValue)
         {
             Response.Headers.Add("Access-Control-Allow-Origin", "*");
